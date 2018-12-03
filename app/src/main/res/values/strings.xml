@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Quiz App DSC Challenge</string>
+
+    <!-- Question 1 [CHAR LIMIT = NONE] -->
+    <string name="question_one">The aquatic environment can be classified based on their salinity into?</string>
+
+    <!-- Question 1 Option a [CHAR LIMIT = NONE] -->
+    <string name="one_a">Marine, Brackish and Freshwater</string>
+
+    <!-- Question 1 Option b [CHAR LIMIT = NONE] -->
+    <string name="one_b">Marine, Brackish and Estuarine</string>
+
+    <!-- Question 1 Option c [CHAR LIMIT = NONE] -->
+    <string name="one_c">Marine, Saltwater and Freshwater</string>
+
+    <!-- Question 2 [CHAR LIMIT = NONE] -->
+    <string name="question_two">The aquatic environment with the highest salinity is?</string>
+
+    <!-- Question 2 Option a [CHAR LIMIT = NONE] -->
+    <string name="two_a">Freshwater</string>
+
+    <!-- Question 2 Option b [CHAR LIMIT = NONE] -->
+    <string name="two_b">Brackish Water</string>
+
+    <!-- Question 2 Option c [CHAR LIMIT = NONE] -->
+    <string name="two_c">Marine Water</string>
+
+    <!-- Question 3 [CHAR LIMIT = NONE] -->
+    <string name="question_three">The deepest ocean in the world is?</string>
+
+    <!-- Question 3 Option a [CHAR LIMIT = NONE] -->
+    <string name="three_a">Atlantic ocean</string>
+
+    <!-- Question 3 Option b [CHAR LIMIT = NONE] -->
+    <string name="three_b">Pacific ocean</string>
+
+    <!-- Question 3 Option c [CHAR LIMIT = NONE] -->
+    <string name="three_c">Arctic ocean</string>
+
+    <!-- Question 4 [CHAR LIMIT = NONE] -->
+    <string name="question_four">The largest ocean in the world is?</string>
+
+    <!-- Question 4 Option a [CHAR LIMIT = NONE] -->
+    <string name="four_a">Atlantic ocean</string>
+
+    <!-- Question 4 Option b [CHAR LIMIT = NONE] -->
+    <string name="four_b">Pacific ocean</string>
+
+    <!-- Question 4 Option c [CHAR LIMIT = NONE] -->
+    <string name="four_c">Arctic ocean</string>
+
+    <!-- Question 5 [CHAR LIMIT = NONE] -->
+    <string name="question_five">Animals that live in water are called?</string>
+
+    <!-- Question 5 Option a [CHAR LIMIT = NONE] -->
+    <string name="five_a">Aquatic animals</string>
+
+    <!-- Question 5 Option b [CHAR LIMIT = NONE] -->
+    <string name="five_b">Terrestrial animals</string>
+
+    <!-- Question 5 Option c [CHAR LIMIT = NONE] -->
+    <string name="five_c">Aboreal animals</string>
+
+    <!-- Question 6 [CHAR LIMIT = NONE] -->
+    <string name="question_six">Frogs are under which classification?</string>
+
+    <!-- Question 6 Option a [CHAR LIMIT = NONE] -->
+    <string name="six_a">Reptiles</string>
+
+    <!-- Question 6 Option b [CHAR LIMIT = NONE] -->
+    <string name="six_b">Mammals</string>
+
+    <!-- Question 6 Option c [CHAR LIMIT = NONE] -->
+    <string name="six_c">Amphibians</string>
+
+    <!-- Question 7 [CHAR LIMIT = NONE] -->
+    <string name="question_seven">What type of organism must be at the base a grazing food chain?</string>
+
+    <!-- Question 7 Option a [CHAR LIMIT = NONE] -->
+    <string name="seven_a">Plants</string>
+
+    <!-- Question 7 Option b [CHAR LIMIT = NONE] -->
+    <string name="seven_b">Juvenile fish</string>
+
+    <!-- Question 7 Option c [CHAR LIMIT = NONE] -->
+    <string name="seven_c">Zooplanktons</string>
+
+    <!-- Question 8 [CHAR LIMIT = NONE] -->
+    <string name="question_eight">A common feature in mammals is?</string>
+
+    <!-- Question 8 Option a [CHAR LIMIT = NONE] -->
+    <string name="eight_a">Laying of eggs</string>
+
+    <!-- Question 8 Option b [CHAR LIMIT = NONE] -->
+    <string name="eight_b">Presence of hair</string>
+
+    <!-- Question 8 Option c [CHAR LIMIT = NONE] -->
+    <string name="eight_c">Internal fertilization</string>
+
+    <!-- Question 9 [CHAR LIMIT = NONE] -->
+    <string name="question_nine">An animal that feeds on animal flesh is called?</string>
+
+    <!-- Question 9 Option a [CHAR LIMIT = NONE] -->
+    <string name="nine_a">A carnivore</string>
+
+    <!-- Question 9 Option b [CHAR LIMIT = NONE] -->
+    <string name="nine_b">An omnivore</string>
+
+    <!-- Question 9 Option c [CHAR LIMIT = NONE] -->
+    <string name="nine_c">A herbivore</string>
+
+    <!-- Question 10 [CHAR LIMIT = NONE] -->
+    <string name="question_ten">Which of these is a true reptile?</string>
+
+    <!-- Question 10 Option a [CHAR LIMIT = NONE] -->
+    <string name="ten_a">A spider</string>
+
+    <!-- Question 10 Option b [CHAR LIMIT = NONE] -->
+    <string name="ten_b">A snail</string>
+
+    <!-- Question 10 Option c [CHAR LIMIT = NONE] -->
+    <string name="ten_c">A lizard</string>
+</resources>
