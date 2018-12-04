@@ -86,7 +86,7 @@
     <string name="seven_c">Zooplanktons</string>
 
     <!-- Question 8 [CHAR LIMIT = NONE] -->
-    <string name="question_eight">A common feature in mammals is?</string>
+    <string name="question_eight">A unique feature in mammals is?</string>
 
     <!-- Question 8 Option a [CHAR LIMIT = NONE] -->
     <string name="eight_a">Laying of eggs</string>
