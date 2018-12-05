@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="0dp"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -11,23 +12,24 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quiz Questions"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
 
-    </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Quiz Questions"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -52,25 +54,29 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp">
 
                 <RadioButton
+                    android:id="@+id/question_one_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/one_a" />
 
                 <RadioButton
+                    android:id="@+id/question_one_b"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/one_b"/>
+                    android:text="@string/one_b" />
 
                 <RadioButton
+                    android:id="@+id/question_one_c"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/one_c"/>
+                    android:text="@string/one_c" />
             </RadioGroup>
 
             <ImageView
@@ -100,43 +106,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_two" />
+                android:text="@string/question_two"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/two_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/two_b"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_a" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/two_c"/>
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_b" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/question_two"/>
-    </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/question_two_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/two_c" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/question_two" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -155,28 +163,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_three" />
+                android:text="@string/question_three"
+                android:textSize="18sp" />
         </LinearLayout>
 
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/three_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/three_b"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three_a" />
 
+                <RadioButton
+                    android:id="@+id/question_three_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/three_b" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -209,28 +218,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_four" />
+                android:text="@string/question_four"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/four_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/four_b"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four_a" />
 
+                <RadioButton
+                    android:id="@+id/question_four_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four_b" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -245,7 +255,6 @@
             android:layout_marginRight="20dp"
             android:src="@drawable/question_four"/>
     </RelativeLayout>
-
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -264,27 +273,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_five" />
+                android:text="@string/question_five"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
-
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/five_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/five_b"/>
+                <RadioButton
+                    android:id="@+id/question_five_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five_a" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/five_b" />
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -319,8 +328,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_six" />
+                android:text="@string/question_six"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
@@ -331,16 +340,15 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/six_a" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/six_a" />
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/six_b"/>
-
+                android:text="@string/six_b" />
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -373,43 +381,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_seven" />
+                android:text="@string/question_seven"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/seven_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/seven_b"/>
+                <RadioButton
+                    android:id="@+id/question_seven_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven_a" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/seven_c"/>
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven_b" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/question_7"/>
-    </RelativeLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seven_c" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/question_7" />
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -427,43 +438,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_eight" />
+                android:text="@string/question_eight"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/eight_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/eight_b"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eight_a" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/eight_c"/>
-        </RadioGroup>
+                <RadioButton
+                    android:id="@+id/question_eight_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eight_b" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/question_8"/>
-    </RelativeLayout>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/eight_c" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/question_8" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -482,8 +495,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_nine" />
+                android:text="@string/question_nine"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
@@ -492,34 +505,40 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
-
-            <RadioButton
+            android:layout_marginLeft="25dp"/>
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/nine_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nine_b"/>
+                <RadioButton
+                    android:id="@+id/question_nine_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nine_a" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nine_c"/>
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nine_b" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nine_c" />
+            </RadioGroup>
 
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/question_9"/>
-    </RelativeLayout>
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/question_9" />
+        </RelativeLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -537,58 +556,63 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:textSize="18sp"
-                android:text="@string/question_ten" />
+                android:text="@string/question_ten"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp">
 
-            <RadioButton
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_a" />
+                android:layout_marginLeft="25dp">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ten_b"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_a" />
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ten_c"/>
-        </RadioGroup>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_b" />
 
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="90dp"
-            android:layout_alignParentRight="true"
-            android:scaleType="centerCrop"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/question_10"/>
-    </RelativeLayout>
+                <RadioButton
+                    android:id="@+id/question_ten_answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_c" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="90dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/question_10" />
+        </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp">
 
             <Button
+                android:id="@+id/submit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Submit"/>
+                android:text="Submit" />
 
             <Button
+                android:id="@+id/reset"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="reset"
-                android:layout_alignParentRight="true"/>
+                android:layout_alignParentRight="true"
+                android:text="reset" />
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
