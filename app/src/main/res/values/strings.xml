@@ -98,7 +98,7 @@
     <string name="eight_c">Internal fertilization</string>
 
     <!-- Question 9 [CHAR LIMIT = NONE] -->
-    <string name="question_nine">An animal that feeds on animal flesh is called?</string>
+    <string name="question_nine">An animal that feeds on animal flesh only is called?</string>
 
     <!-- Question 9 Option a [CHAR LIMIT = NONE] -->
     <string name="nine_a">A carnivore</string>
