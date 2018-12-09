@@ -120,4 +120,5 @@
 
     <!-- Question 10 Option c [CHAR LIMIT = NONE] -->
     <string name="ten_c">A lizard</string>
+    <string name="preferences_high_score_key" translatable="false">high_score_key</string>
 </resources>
