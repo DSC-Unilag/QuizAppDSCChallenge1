@@ -38,7 +38,7 @@ public class Question2Activity extends AppCompatActivity {
     //OnClick back
     public void back(View view){
             // Update the score
-            MainActivity.score = MainActivity.score2;
+            Question1Activity.score = Question1Activity.score2;
         //To end current activity
         finish();
         }

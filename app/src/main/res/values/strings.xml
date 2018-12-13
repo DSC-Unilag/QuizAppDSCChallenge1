@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Quiz App DSC Challenge</string>
+    <string name="app_name">Bio QuiZ</string>
 
+    <string name="hint">Enter your name here</string>
     <!-- Question 1 [CHAR LIMIT = NONE] -->
     <string name="question_one">The aquatic environment can be classified based on their salinity into?</string>
 
@@ -121,4 +122,7 @@
     <!-- Question 10 Option c [CHAR LIMIT = NONE] -->
     <string name="ten_c">A lizard</string>
     <string name="preferences_high_score_key" translatable="false">high_score_key</string>
+    <string name="quiz_note">This quiz contains 10 questions on elementary biology.
+        Select the right option and move to the next.
+    Kindly enter your name and start the quiz.</string>
 </resources>

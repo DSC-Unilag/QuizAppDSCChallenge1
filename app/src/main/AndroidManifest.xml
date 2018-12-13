@@ -16,24 +16,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Question2Activity"
-            android:label="Question 2" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question3Activity"
-            android:label="Question 3" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question4Activity"
-            android:label="Question 4" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question5Activity"
-            android:label="Question 5" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question6Activity"
-            android:label="Question 6" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question7Activity"
-            android:label="Question 7" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question8Activity"
-            android:label="Question 8" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question9Activity"
-            android:label="Question 9" android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Question10Activity"
-            android:label="Question 10" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Question2Activity"
+            android:label="Question 2"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question3Activity"
+            android:label="Question 3"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question4Activity"
+            android:label="Question 4"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question5Activity"
+            android:label="Question 5"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question6Activity"
+            android:label="Question 6"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question7Activity"
+            android:label="Question 7"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question8Activity"
+            android:label="Question 8"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question9Activity"
+            android:label="Question 9"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Question10Activity"
+            android:label="Question 10"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".Question1Activity"
+            android:label="Question 1"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>

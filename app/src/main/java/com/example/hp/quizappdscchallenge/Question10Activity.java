@@ -41,7 +41,7 @@ public class Question10Activity extends AppCompatActivity {
     }
 
     public void reset(View view){
-        MainActivity.score = 0;
+        Question1Activity.score = 0;
         //To go back to the first question
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);

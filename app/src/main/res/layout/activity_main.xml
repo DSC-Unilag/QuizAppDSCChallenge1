@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,92 +8,99 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:color="#008000"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:hint="@string/hint"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:text="Quiz Questions"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginRight="10dp">
 
-        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="80sp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@color/colorPrimary" />
 
-
-        <ImageView
-            android:layout_marginLeft="20dp"
-            android:layout_width="310dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="20dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/question_one"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1."
-                android:textSize="23sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="@string/question_one"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioGroup
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp">
-
-                <RadioButton
-                    android:id="@+id/question_one_answer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/one_a" />
-
-                <RadioButton
-                    android:id="@+id/question_one_b"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/one_b" />
-
-                <RadioButton
-                    android:id="@+id/question_one_c"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/one_c" />
-            </RadioGroup>
-        </RelativeLayout>
-        <RelativeLayout
+        <TextView
+            android:id="@+id/bioQuiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp">
-            <Button
-                android:id="@+id/next"
-                android:onClick="next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:text="next"/>
-        </RelativeLayout>
-</LinearLayout>
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:text="@string/app_name"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="80sp"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="80sp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <View
+            android:layout_width="80sp"
+            android:layout_height="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/background_dark"
+            android:backgroundTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bio2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/quiz_note"
+        android:textSize="25sp" />
+    <Button
+        android:onClick="startQuiz"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

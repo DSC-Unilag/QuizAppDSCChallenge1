@@ -4,28 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_margin="5dp"
-    tools:context=".Question10Activity">
+    android:orientation="vertical"
+    tools:context=".Question1Activity">
 
     <ImageView
-        android:layout_width="305dp"
+        android:layout_width="288dp"
         android:layout_height="150dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/question_10" />
+        android:src="@drawable/question_one" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:orientation="horizontal">
+        android:layout_marginLeft="20dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="10."
+            android:text="1."
             android:fontFamily="casual"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="23sp"
@@ -37,7 +36,7 @@
             android:layout_marginLeft="10dp"
             android:fontFamily="casual"
             android:textColor="@color/colorPrimaryDark"
-            android:text="@string/question_ten"
+            android:text="@string/question_one"
             android:textSize="18sp" />
     </LinearLayout>
 
@@ -51,51 +50,35 @@
             android:layout_marginLeft="25dp">
 
             <RadioButton
+                android:id="@+id/question_one_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_a" />
+                android:text="@string/one_a" />
 
             <RadioButton
+                android:id="@+id/question_one_b"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_b" />
+                android:text="@string/one_b" />
 
             <RadioButton
-                android:id="@+id/question_ten_answer"
+                android:id="@+id/question_one_c"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/ten_c" />
+                android:text="@string/one_c" />
         </RadioGroup>
     </RelativeLayout>
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp">
-
         <Button
-            android:onClick="back"
+            android:id="@+id/next"
+            android:onClick="next"
+            android:background="@color/colorPrimaryDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimaryDark"
-            android:text="back" />
-
-        <Button
-            android:id="@+id/reset"
-            android:onClick="reset"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:background="@color/colorPrimaryDark"
-            android:text="reset" />
-
-        <Button
-            android:id="@+id/submit"
-            android:onClick="submit"
-            android:layout_width="wrap_content"
             android:layout_alignParentRight="true"
-            android:layout_height="wrap_content"
-            android:text="Submit"
-            android:background="@color/colorPrimaryDark"/>
+            android:text="next"/>
     </RelativeLayout>
 </LinearLayout>
