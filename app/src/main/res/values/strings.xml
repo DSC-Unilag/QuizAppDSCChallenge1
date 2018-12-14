@@ -2,6 +2,8 @@
     <string name="app_name">Bio QuiZ</string>
 
     <string name="hint">Enter your name here</string>
+    <!-- contact details [CHAR LIMIT = NONE] -->
+    <string name="developer">©Paimo</string>
     <!-- Question 1 [CHAR LIMIT = NONE] -->
     <string name="question_one">The aquatic environment can be classified based on their salinity into?</string>
 
@@ -26,7 +28,7 @@
     <!-- Question 2 Option c [CHAR LIMIT = NONE] -->
     <string name="two_c">Marine Water</string>
 
-    <!-- Question 3 [CHAR LIMIT = NONE] -->
+    <!-- Question 3  -->
     <string name="question_three">The deepest ocean in the world is?</string>
 
     <!-- Question 3 Option a [CHAR LIMIT = NONE] -->

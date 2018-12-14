@@ -36,6 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:textStyle="bold"
             android:fontFamily="casual"
             android:textColor="@color/colorPrimaryDark"
             android:text="@string/question_seven"

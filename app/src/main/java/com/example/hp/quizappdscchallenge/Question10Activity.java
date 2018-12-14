@@ -36,14 +36,14 @@ public class Question10Activity extends AppCompatActivity {
             // Update the score
             score++;
         }
-        Toast.makeText(getApplicationContext(), "score is " + score, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Hey " + MainActivity.userName + ", you got " + score + " out of 10 questions.", Toast.LENGTH_SHORT).show();
         score = score2;
     }
 
     public void reset(View view){
         Question1Activity.score = 0;
         //To go back to the first question
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, Question1Activity.class);
         startActivity(i);
     }
 }

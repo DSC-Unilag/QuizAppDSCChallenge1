@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:fontFamily="casual"
+            android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
             android:text="@string/question_ten"
             android:textSize="18sp" />
