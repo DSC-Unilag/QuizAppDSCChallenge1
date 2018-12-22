@@ -103,6 +103,15 @@
         android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"/>
+
+    <Button
+        android:onClick="viewMyStory"
+        android:layout_margin="20dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="View my Story"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

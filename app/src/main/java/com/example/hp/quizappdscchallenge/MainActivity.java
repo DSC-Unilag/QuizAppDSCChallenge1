@@ -1,6 +1,7 @@
 package com.example.hp.quizappdscchallenge;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -23,5 +24,13 @@ public class MainActivity extends AppCompatActivity {
 
         EditText edit = (EditText)findViewById(R.id.edit_text);
         userName = edit.getText().toString();
+    }
+
+    //OnClick View my story
+    public void viewMyStory(View view){
+        String url = "https://twitter.com/paimo_emmanuel/status/1076446087802703872?s=09";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
 }
